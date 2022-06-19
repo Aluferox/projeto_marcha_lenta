@@ -3,10 +3,10 @@
 // Objeto da classe Servo.h
 Servo myServo;
 
-//pino e Attach servo motor
+//pino de Attach servo motor
 int pinServo = 7;
 
-// pino madhca down e up
+// pino marcha down e up
 int down = 2;
 int up = 3;
 
@@ -20,7 +20,7 @@ int march_six = 107;
 int march_seven = 125;
 int march_eight = 155;
 
-// quantidade de marhcas
+// quantidade de marchas
 int march = 8;
 
 void setup()
@@ -50,6 +50,7 @@ void loop()
   Serial.println(march);
 }
 
+//Função para passar marcha para cima
 void marchUP()
 {
   march -= 1;
@@ -96,6 +97,7 @@ void marchUP()
   delay(300);
 }
 
+//Função para passar marcha para baixo
 void marchDOWN()
 {
   march += 1;
